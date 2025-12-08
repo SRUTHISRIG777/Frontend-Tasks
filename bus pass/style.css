@@ -1,0 +1,36 @@
+#root{
+    margin:0 auto;
+    width: fit-content;
+}
+#one{
+    
+    border: 2px solid black ;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.one{
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: larger;
+
+    
+    
+}
+.address{
+     margin-top: 25px;
+     
+    
+}
+#img{
+
+    text-align: center;
+}
+fieldset{
+    border-radius: 10px;
+}
+span{
+    color: red;
+}

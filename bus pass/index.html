@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root">
+        <div id="one">
+            <img src="img2.png" height="100px" width="150px">
+            <h2>TELANGANA STATE ROAD TRANSPORT CORPORATION </h2>
+            <h2>GENERAL BUS PASS APPLICATION</h2>
+        </div>
+        <div class="address">
+            <form action="success.html">
+                <fieldset>
+                    <legend class="one">Applicant details</legend>
+                    <label>Name <span>*</span></label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text"required size="20px"required>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>Father's/Guardian's Name <span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text"required size="20px"required><br><br>
+                    <label>Date of birth<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>Gender<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio"name="gender" required> Female
+                    <input type="radio" name="gender">Male<br><br>
+                    <label>Age As on:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number"required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>Aadhar No:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" pattern="\d{12}" title="Aadhaar must be exactly 12 digits"size="20px"required><br><br>
+                    <label>Whatsapp No<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text"size="20px"pattern="[6-9]\d{9}" title="WhatsApp number must start with 6-9 and be 10 digits"required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>E-mail Id<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="mail"size="20px"required><br><br>
+                    <label>Photo<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="file"accept=".pdf"required>
+
+
+
+
+
+                </fieldset>
+            
+        </div>
+        <div class="address">
+            
+                <fieldset>
+                    <legend class="one">Residential Address Details</legend>
+                    <label>Applicant's Address<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <textarea rows="5"cols="30"maxlength="20"required></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>District<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select required>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="varanagal">varanagal</option>
+                        <option value="khammam">khammam</option>
+                    </select><br><br>
+                    <label>Mandal<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select required>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Adilabad">Adilabad</option>
+                        <option value="jagtial">jagtial</option>
+                    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <label>Village<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select required>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="gajwel">gajwel</option>
+                        <option value="kodad">kodad</option>
+                    </select><br><br>
+                    <label>Pincode<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text"pattern="\d{6}" title="Pincode must be exactly 6 digits">
+
+
+                </fieldset>
+        
+
+        </div>
+        <div class="address">
+            
+                <fieldset>
+                    <legend class="one">Pass Type Details</legend>
+                    <label>City<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select required>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="warangal">warangal</option>
+                        <option value="karimnagar">karimnagar</option>
+                    </select><br><br>
+                    <label>Pass Type<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select required>
+                        <option value=""selected disabled>-----select-----</option>
+                        <option value="Greater PASS">Greater pass</option>
+                        <option value="general ordinary route pass">general ordinary route pass  </option>
+                        <option value="ordinary pass">ordinary Pass</option>
+                        <option value="metro express pass">metro express pass</option>
+                    </select>
+                </fieldset>
+            
+
+        </div>
+        <div class="address">
+            
+                <fieldset>
+                    <legend class="one">Mode of Payment & pass collection</legend>
+                    <label>Payment Mode<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select required>
+                        <option>select payment mode</option>
+                        <option>payment at counter</option>
+                    </select>
+                    <br><br>
+                    <label>Pass Delivery Mode<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select required>
+                        <option>select pass Delivery mode</option>
+                        <option>At Counter</option>
+                    </select><br><br>
+                    <label>Center at which<br>you want to collect Pass<span>*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select required>
+                         <option value=""selected disabled>-----select-----</option>
+                         <option value="RTC ABIDS -- HYD[09/12/2025]">RTC ABIDS -- HYD[09/12/2025]</option>
+                         <option value="RTC AIRPORT -- HYD [08/12/2025]">RTC AIRPORT -- HYD [08/12/2025]</option>
+                    </select>
+
+                </fieldset>
+        
+
+        </div>
+        <div id="img"class="address">
+        
+            <img src="img3.png"height="50px" width="300px"><br><br>
+            <input type="text"size="30px"required><br><br>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+
+        
+
+    </div>
+</body>
+</html>
