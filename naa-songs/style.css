@@ -1,0 +1,25 @@
+#root{
+    
+    margin: 50px auto;
+    width: fit-content;
+    text-align: center;
+}
+.song{
+     margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
+table{
+    background-color: black;
+    color:white;
+}
+caption{
+    font-size:50px;
+    color:black;
+    
+}
+#one{
+    font-size:30px;
+    color:black;
+
+}
