@@ -1,0 +1,78 @@
+.container{
+    
+    margin: 40px;
+    height: 1000px;
+
+    display: flex;          
+    /* justify-content: space-around; */
+    /* align-items: flex-start; */
+}
+
+.child-1, .child-2, .child-3, .child-4{
+    margin-top: 100px;
+     margin:20px;
+}
+
+img{
+    height: 500px;
+    width: 300px;
+}
+
+h3{
+    font-family: "Karma", sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+p{
+     font-family: "Karma", sans-serif;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+
+/* .container{
+    border:2px solid black;
+    margin:40px;
+    height: 1000px;
+    
+    
+
+}
+.child-1{
+    display: inline-block;
+    margin-top: 100px;
+    margin:20px;
+    height: 800px;
+
+
+}
+.child-2{
+    display: inline-block;
+    margin-top: 100px;
+    margin:20px;
+    height: 800px;
+
+}
+.child-3{
+    display: inline-block;
+    margin-top: 100px;
+    margin:20px;
+    height: 800px;
+
+}
+.child-4{
+    display: inline-block;
+    margin-top: 100px;
+    margin:20px;
+    height: 800px;
+
+}
+img{
+    height: 500px;
+    width: 300px;
+}
+h3{
+    font-family: "Karma", sans-serif;
+    font-size: 24px;
+} */
