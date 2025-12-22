@@ -1,0 +1,82 @@
+.container{
+    width: 100%;
+    position: relative;
+}
+
+
+h2{
+    position:absolute;
+    top:50%;
+    left:40%;
+    
+    font-size: 50px;
+    color: white;
+    
+
+
+
+}
+span{
+    color: white;
+    background-color: black;
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+
+}
+.child-1,.child-2,.child-3,.child-4{
+   margin: 5px;
+   height: 300px;
+   width: 350px; 
+   display: inline-block;
+    /* border: 2px solid black; */
+    position: relative;
+}
+.container-1{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 80%;
+    display: inline-block;
+    
+
+}
+.container-2{
+    margin: 3px;
+     /* border: 2px solid black; */
+   width: 100%;
+    height: 100%;
+
+}
+.container-3{
+    margin: 3px;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 100%;
+
+}
+.child-5,.child-6,.child-7,.child-8{
+   margin: 5px;
+   height: 300px;
+   width: 350px; 
+   display: inline-block;
+   /* border: 2px solid black; */
+   position: relative;
+}
+/* .one{
+    position: absolute;
+    top:-19px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+} */
+.one,.two,.three,.four,.five,.six,.seven,.eight{
+     padding: 5px;
+    position: absolute;
+    top:-19px;
+    background-color: black;
+    color: white;
+}
+
+
