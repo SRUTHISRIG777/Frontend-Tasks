@@ -1,0 +1,261 @@
+.container{
+    height: 600px;
+    width: 350px  !important;
+    border: 1px solid black;
+
+
+    border-top-left-radius: 60px;
+    border-top-right-radius:65px ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    left:500px;
+     overflow: scroll;
+     scrollbar-width: none;
+     background-image: url("https://cdn.wallpapersafari.com/2/86/3voQJV.jpg");
+    background-size: cover;       
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+.header{
+    width: 350px;
+    height: 70px;
+     border: 1px solid;
+      border-top-left-radius: 60px;
+      border-top-right-radius:65px ;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      margin-left: 0px;
+      position: fixed;
+      
+      left:500px;
+      right:0px;
+      background-color: black;
+       z-index: 100;
+      
+} 
+ 
+               
+
+
+
+
+.footer{
+    width: 260px;
+    height: 50px;
+     border: 1px solid ;
+      border-radius: 50px;
+      position:fixed;
+      
+      background-color:rgb(115, 125, 134);
+      
+
+}
+.bi.bi-arrow-left{
+    position: absolute;
+    top:25px;
+    left: 20px;
+    font-size: 20px;
+    color: white;
+
+}
+/* .bi.bi-person-circle{
+    position: absolute;
+    top:10px;
+    left: 60px;
+    font-size: 40px;
+    color: white; 
+    
+} */
+ .profile {
+    width: 50px;           
+    height: 50px;  
+     position: absolute;
+    top:10px;
+    left: 50px;        
+    border-radius: 50%;    
+    overflow: hidden;      
+}
+
+.profile img {
+    width: 100%;          
+    height: 100%;          
+    object-fit: cover;     
+}
+.name{
+    position: absolute;
+    top:25px;
+    left: 115px;
+    font-size: 20px;
+    color: white; 
+
+}
+.bi.bi-camera-video{
+ position: absolute;
+    top:25px;
+    left: 230px;
+    font-size: 25px;
+    color: white; 
+
+}
+.bi.bi-telephone{
+    position: absolute;
+    top:25px;
+    left: 275px;
+    font-size: 25px;
+    color: white;
+
+}
+.bi.bi-three-dots-vertical{
+    position: absolute;
+    top:25px;
+    left: 310px;
+    font-size: 25px;
+    color: white;
+}
+.bi.bi-emoji-smile{
+    position: absolute;
+    left: 10px;
+    top:5px;
+    color: rgba(255, 255, 255, 0.722);
+    font-size: 25px;
+    
+}
+.msg{
+    font-size: 18px !important;
+    color:rgba(255, 255, 255, 0.722)!important;
+    position: absolute !important;
+    left:50px !important;
+    top:10px !important;
+
+
+}
+.bi.bi-paperclip{
+    font-size: 20px;
+    color:rgba(255, 255, 255, 0.722);
+    position: absolute;
+    left:150px;
+    top:10px;
+
+}
+.bi.bi-camera{
+    font-size: 20px;
+    color:rgba(255, 255, 255, 0.722);
+    position: absolute;
+    left:230px;
+    top:10px;
+
+
+}
+.bi.bi-currency-rupee{
+    font-size: 20px;
+    color:rgba(255, 255, 255, 0.722);
+    position: absolute;
+    left:190px;
+    top:10px;
+}
+.mic{
+    position: absolute;
+    right: -60px;         
+    top: 0px;
+
+    width: 50px;
+    height: 50px;
+    background-color:limegreen;  
+    border-radius: 50%;
+
+    
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.mic i{
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    left:14px;
+    top: 5px;
+}
+/* .body p{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px 10px;
+    height: auto;
+    width: 200px;
+    
+
+} */
+ .body{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+ }
+.right{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    height: auto;
+    width: 200px;
+    margin-left: auto;
+    color: white;
+    background-color: rgb(3, 54, 3);
+    position: relative;
+    
+    /* position: absolute;
+    left:5px; */
+
+}
+.left{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    height: auto;
+    width: 200px;
+    margin-right: 20px;
+    color: white;
+    background-color:rgb(42, 42, 42);
+    /* position: absolute;
+    right:0px; */
+
+}
+
+.child{
+    background-color:black;
+    position: fixed;
+    bottom: 135px;
+    height: 50px;
+    width: 350px;
+    margin-left:-13px;
+    z-index: 1;
+    
+
+}
+.date{
+    position: sticky;
+    top:80px;
+    border: 1px solid white;
+    border-radius: 10px;
+     padding: 5px 10px;
+    height: auto;
+    width: 200px;
+    margin-left: 70px;
+    color:lightslategrey;
+    background-color:black ;
+    z-index: 1;
+
+}
+.bi.bi-check-all{
+    font-size: 14px;
+    color: rgb(28, 164, 217);  
+    margin-left: 5px;
+   
+    
+
+}
+
+
+
+
+
