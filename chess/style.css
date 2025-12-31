@@ -1,0 +1,39 @@
+body{
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 810px;
+    width: 800px;
+    border: 1px solid black;
+    
+    
+}
+.parent{
+    border: 1px solid;
+    height: 100px;
+
+}
+.parent{
+    display: flex;
+}
+.child{
+    height: 100%;
+    width: 100px;
+    border: 1px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.odd{
+    background-color: bisque;
+}
+.even{
+    background-color: green;
+}
+.child>img{
+    height:50% ;
+    width: 50%;
+}
