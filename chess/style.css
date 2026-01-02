@@ -5,15 +5,15 @@ body{
     align-items: center;
 }
 .container{
-    height: 810px;
-    width: 800px;
-    border: 1px solid black;
+    height: 655px;
+    width: 655px;
+    
     
     
 }
 .parent{
     border: 1px solid;
-    height: 100px;
+    height: 80px;
 
 }
 .parent{
@@ -26,14 +26,31 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.8s;
 }
-.odd{
+
+.parent-1>.child:nth-child(odd){
     background-color: bisque;
+
 }
-.even{
+.parent-1>.child:nth-child(even){
+    background-color: green;
+}
+.parent-2>.child:nth-child(even){
+    background-color: bisque;
+
+}
+.parent-2>.child:nth-child(odd){
     background-color: green;
 }
 .child>img{
     height:50% ;
     width: 50%;
+    transition: all 0.8s;
 }
+.child:hover img{
+    height:85%;
+    width: 85%;
+    
+}
+
