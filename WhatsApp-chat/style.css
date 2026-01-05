@@ -1,13 +1,13 @@
 .container{
-    height: 600px;
+    height: 650px;
     width: 350px  !important;
     border: 1px solid black;
 
 
     border-top-left-radius: 60px;
     border-top-right-radius:65px ;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 65px;
     position: fixed;
     left:500px;
      overflow: scroll;
@@ -46,6 +46,7 @@
      border: 1px solid ;
       border-radius: 50px;
       position:fixed;
+      
       
       background-color:rgb(115, 125, 134);
       
@@ -224,11 +225,14 @@
 .child{
     background-color:black;
     position: fixed;
-    bottom: 135px;
-    height: 50px;
+    bottom: 90px;
+    height: 90px;
     width: 350px;
     margin-left:-13px;
+    padding-top: 20px;
     z-index: 1;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     
 
 }
