@@ -24,6 +24,9 @@
         opacity: 1;
     }
 } */ 
+html, body {
+    overflow-x: hidden;
+}
 
 html {
   scroll-behavior: smooth;
@@ -587,11 +590,11 @@ input[type="radio"] {
     margin-top: 5%;
     height: 120vh;
     width: 80.5vw;
-    border: 1px solid;
+    
     margin-left: 9%;
  }
  .sec-12{
-    border:1px solid red;
+    
     width: 100%;
     height: 20%;
     display: flex;
