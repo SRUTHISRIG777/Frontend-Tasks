@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var day=prompt("enter day");
+        var age=prompt("enter age");
+        var price;
+       // var price=prompt("enter ticket price:")
+        switch(day){
+            case "monday":
+            case "tuesday":
+            case "wednesday":
+            case "thursday":
+            case "friday":
+                price=12;
+                if(price==12){
+                if(age>=65||age<=12){
+                    console.log("appleid 50% discount")
+                    console.log("final price:"+(price-(price*50/100)))
+                }
+                else{
+                    console.log("no discount");
+                    console.log("final price"+price);
+                }
+            }
+
+             break;
+            case "saturday":
+            case "sunday":
+                price=15;
+              if(price==15){
+                if(age>=65||age<=12){
+                    console.log("appleid 30% discount")
+                    console.log("final price:"+(price-(price*30/100)))
+                }
+                else{
+                    console.log("no discount");
+                    console.log("final price"+price);
+                }
+            }  
+            break;
+        default:console.log("invalid day entered")
+
+        }
+    </script>
+    
+</body>
+</html>

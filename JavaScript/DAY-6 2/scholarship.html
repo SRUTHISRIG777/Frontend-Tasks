@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var gpa=prompt("enter gpa");
+        var extra_activities=prompt("enter extracurricular activities")
+        var hours=prompt("enter community service hours")
+        if(gpa>=3.5&&extra_activities==0&&hours==0){
+            console.log("Merit-Based Scholarship")
+        }
+        else if(gpa>=3.0&&extra_activities>=2){
+            if(gpa>=3.5){
+                  console.log("Merit-Based Scholarship")
+            }
+            console.log("Leadership Scholarship")
+
+        }
+        else if(gpa>=2.5&&hours>=100){
+            if(gpa>=3.5){
+            console.log("Merit-Based Scholarship")
+        }
+        if(gpa>=3.0&&extra_activities>=2){
+            
+            console.log("Leadership Scholarship")
+
+        }
+        console.log("Community Service Scholarship")
+
+
+        }
+        else{
+            console.log("you are not eligible for any scholarship")
+        }
+
+    </script>
+    
+</body>
+</html>

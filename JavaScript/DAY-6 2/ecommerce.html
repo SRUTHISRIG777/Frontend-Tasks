@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var membership=prompt("enter membership type:")
+        var amount=prompt("enter amount")
+        if(membership=='regular'&&amount>0){
+            if(amount<100){
+                console.log("no discount")
+            }
+            else if(amount>=100&&amount<=500){
+                console.log("5% discount is applied")
+                console.log("final price:"+(amount-(amount*(5/100))));
+            }
+            else if(amount>500){
+                console.log("10% discount is applied")
+                console.log("final price:"+(amount-(amount*(10/100))));
+            }
+        }
+        else if(membership=='vip'&&amount>0){
+            if(amount<100){
+                console.log("10% discount is applied")
+                console.log("final price:"+(amount-(amount*(10/100))));
+                
+            }
+            else if(amount>=100&&amount<=500){
+                console.log("15% discount is applied")
+                console.log("final price:"+(amount-(amount*(15/100))));
+            }
+            else if(amount>500){
+                console.log("20% discount is applied")
+                console.log("final price:"+(amount-(amount*(20/100))));
+            }
+            
+        }
+        else{
+            console.log("please enter valid amount and valid membership type")
+        }
+    </script>
+    
+</body>
+</html>
