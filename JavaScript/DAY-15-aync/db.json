@@ -1,0 +1,33 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "sweety",
+      "branch": "CSE",
+      "year": 2025,
+      "cgpa": 8.5
+    },
+    {
+      "id": "2",
+      "name": "sweety",
+      "branch": "CSE",
+      "year": 2025,
+      "cgpa": 8.5
+    }
+  ],
+  "teachers": [
+    {
+      "id": "1",
+      "name": "Jyothi",
+      "department": "CSE",
+      "experience": 10
+    },
+    {
+      "id": "2",
+      "name": "Nagarjuna Devi",
+      "department": "ECE",
+      "experience": 8
+    }
+  ]
+ 
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let div = document.createElement("div");
+       // div.style.border="1px solid";
+       div.style.width = "300px";
+       div.style.height = "100px";
+        let table = document.createElement("table");
+        let tr1 = document.createElement("tr");
+        tr1.style.backgroundColor="violet"
+        let th = document.createElement("th");
+        th.innerHTML = "255-5"
+        th.colSpan=3;
+        //table.style.padding="10px"
+        //th.style.padding="0px"
+            
+        table.append(tr1);
+        //table.style.border = "1px solid";
+        tr1.appendChild(th);
+        table.border="1";
+        table.style.width="50%";
+        table.style.borderCollapse="collapse"
+        
+      //  table.cellPadding="20"
+        
+        let names=["samson","kishan","abhishek","dhubed"]
+        let score1=[89,54,52,26];
+        let score2=[46,25,21,8];
+        for(let i=0;i<names.length;i++){
+            let tr=document.createElement("tr");
+            let td1=document.createElement("td");
+            td1.style.fontSize="5px"
+            td1.innerHTML=`<p>${names[i]}</p>`;
+             let td2=document.createElement("td");
+              td2.style.fontSize="5px"
+            td2.innerHTML=`<p>${score1[i]}</p>`;
+             let td3=document.createElement("td");
+              td3.style.fontSize="5px"
+            td3.innerHTML=`<p>${score2[i]}</p>`;
+            tr.append(td1,td2,td3);
+            table.append(tr);
+
+        }
+        div.append(table)
+        document.body.appendChild(div);
+
+
+    </script>
+</body>
+
+</html>
