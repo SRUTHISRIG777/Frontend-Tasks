@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+  <style>
+    body { font-family: Arial; margin: 0; }
+    .navbar {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .container {
+      padding: 30px;
+      text-align: center;
+    }
+    button {
+      padding: 15px 20px;
+      margin: 10px;
+      background: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <h2>Student Dashboard</h2>
+
+  <div>
+    <button onclick="goMyCourses()">My Courses</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Welcome Student </h2>
+
+  <button onclick="goBrowse()">Browse Courses</button>
+</div>
+
+<script src="js/student_dashboard.js">
+
+</script>
+
+</body>
+</html>

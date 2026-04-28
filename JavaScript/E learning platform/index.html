@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Learning Platform</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: #2c3e50;
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      cursor: pointer;
+    }
+
+    nav ul li:hover {
+      text-decoration: underline;
+    }
+
+    nav button {
+      padding: 8px 15px;
+      background: #3498db;
+      border: none;
+      color: white;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+
+    nav button:hover {
+      background: #2980b9;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #3498db, #6dd5fa);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+    }
+
+    .hero button {
+      padding: 12px 20px;
+      margin-top: 20px;
+      background: white;
+      color: #3498db;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    /* Features */
+    .features {
+      text-align: center;
+      padding: 50px;
+    }
+
+    .feature-box {
+      display: inline-block;
+      width: 250px;
+      margin: 15px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: scale(1.05);
+    }
+
+    /* Courses */
+    .courses {
+      text-align: center;
+      padding: 50px;
+      background: #f4f4f4;
+    }
+
+    .course-card {
+      display: inline-block;
+      width: 250px;
+      margin: 15px;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .course-card:hover {
+      transform: scale(1.05);
+    }
+
+    .course-card button {
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: #2ecc71;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .course-card button:hover {
+      background: #27ae60;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+
+<nav>
+  <h2 onclick="goHome()" style="cursor:pointer;">E-Learn</h2>
+
+  <ul>
+    <li onclick="goHome()">Home</li>
+    <li onclick="handleView()">Courses</li>
+    <li onclick="scrollAbout()">About</li>
+  </ul>
+
+  <div>
+    <button onclick="goLogin()">Login</button>
+    <button onclick="goRegister()">Register</button>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <h1>Learn Anytime, Anywhere</h1>
+  <p>Upgrade your skills with our online courses</p>
+  <!-- <button onclick="handleView()">Get Started</button> -->
+   <button onclick="goRegister()">Get Started</button>
+</section>
+
+
+<section class="features">
+  <h2>Our Features</h2>
+
+  <div class="feature-box">
+    <h3>📚 Easy Learning</h3>
+    <p>Access courses anytime</p>
+  </div>
+
+  <div class="feature-box">
+    <h3>📊 Track Progress</h3>
+    <p>Monitor your learning</p>
+  </div>
+
+  <div class="feature-box">
+    <h3>👨‍🏫 Expert Teachers</h3>
+    <p>Learn from professionals</p>
+  </div>
+</section>
+
+
+<section class="courses">
+  <h2>Popular Courses</h2>
+
+  <div class="course-card">
+    <h3>HTML Basics</h3>
+    <p>Learn structure of web pages</p>
+    <button onclick="handleView()">View</button>
+  </div>
+
+  <div class="course-card">
+    <h3>JavaScript</h3>
+    <p>Make websites interactive</p>
+    <button onclick="handleView()">View</button>
+  </div>
+
+  <div class="course-card">
+    <h3>Python</h3>
+    <p>Start programming</p>
+    <button onclick="handleView()">View</button>
+  </div>
+
+</section>
+
+
+<footer id="about">
+  <p>© 2026 E-Learn Platform | All Rights Reserved</p>
+</footer>
+
+<script>
+
+// Navigation
+function goHome(){
+  window.location.href = "index.html";
+}
+
+function goLogin(){
+  window.location.href = "login.html";
+}
+
+function goRegister(){
+  window.location.href = "register.html";
+}
+
+
+function handleView(){
+  let user = localStorage.getItem("currentUser");
+
+  if(user){
+    window.location.href = "browse.html"; // logged in
+  } else {
+    window.location.href = "register.html"; // new user
+  }
+}
+
+
+function scrollAbout(){
+  document.getElementById("about").scrollIntoView({behavior: "smooth"});
+}
+
+</script>
+
+</body>
+</html>

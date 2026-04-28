@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instructor Dashboard</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    .navbar {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px;
+      background: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .course {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+
+    iframe {
+      margin-top: 10px;
+    }
+
+    .submission {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+
+    .assignment-box {
+      background: #fff3cd;
+      padding: 8px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <h2>Instructor Dashboard</h2>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+
+  
+  <div class="card">
+    <h3>Create Course</h3>
+    <input type="text" id="courseName" placeholder="Course Name">
+    <textarea id="courseDesc" placeholder="Course Description"></textarea>
+    <button onclick="createCourse()">Create Course</button>
+  </div>
+
+  
+  <div class="card">
+    <h3>Add Content</h3>
+
+    <label>Select Course:</label>
+    <select id="courseSelect"></select>
+
+    <input type="text" id="video" placeholder="YouTube Video Link">
+    <textarea id="notes" placeholder="Notes"></textarea>
+
+    <button onclick="addContent()">Add Content</button>
+  </div>
+
+  
+  <div class="card">
+    <h3>Create Assignment</h3>
+
+    <label>Select Course:</label>
+    <select id="assignmentCourse"></select>
+
+    <textarea id="assignmentQuestion" placeholder="Enter assignment question"></textarea>
+
+    <button onclick="createAssignment()">Add Assignment</button>
+  </div>
+
+  
+  <div class="card">
+    <h3>Your Courses</h3>
+    <div id="courseList"></div>
+  </div>
+
+  
+  <div class="card">
+    <h3>Student Submissions</h3>
+    <div id="submissions"></div>
+  </div>
+
+</div>
+
+<script src="js/instructor.js">
+
+
+
+</script>
+
+</body>
+</html>

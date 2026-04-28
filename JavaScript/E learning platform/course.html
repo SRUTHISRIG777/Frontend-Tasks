@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    iframe {
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 10px;
+      margin-top: 10px;
+      background: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .feedback {
+      background: #eafaf1;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    .question {
+      background: #fff3cd;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .warning {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+<div class="card">
+  <h2 id="title"></h2>
+  <p id="desc"></p>
+</div>
+
+
+<div class="card">
+  <h3>Course Content</h3>
+  <div id="content"></div>
+</div>
+
+
+<div class="card">
+  <h3>Assignment</h3>
+
+  <div id="question" class="question"></div>
+
+  <textarea id="assignment" placeholder="Write your answer"></textarea>
+  <button id="submitBtn" onclick="submitAssignment()">Submit Assignment</button>
+
+  <p id="assignmentMsg" class="warning"></p>
+</div>
+
+
+<div class="card">
+  <h3>Your Feedback</h3>
+  <div id="feedback"></div>
+</div>
+
+
+<div class="card">
+  <button id="completeBtn" onclick="markComplete()">Mark as Completed</button>
+  <p id="completeMsg" class="warning"></p>
+</div>
+
+<script src="js/course.js">
+
+
+
+</script>
+
+</body>
+</html>
